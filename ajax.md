@@ -1,4 +1,4 @@
-##最原始方法：
+#最原始方法：
 var xhr = new XMLHttpRequest();
 xhr.open('接口名称');
 xhr.send();
@@ -7,7 +7,7 @@ if(readyState!=4) return;
 xxxxx;
 }
 
-##jquery
+#jquery
 
 $.ajax({
     url:'接口名称',
@@ -28,7 +28,7 @@ console.log('请求结束（不论成功与否）')
 }
 })
 
-#等同于：
+##等同于：
 $.getJSON('接口名称' , {id: 1} ,function(res){
     console.log(res)
 })
@@ -36,14 +36,14 @@ $.postJSON('接口名称' , {id: 1} ,function(res){
 console.log(res)
 })
 
-#_局部加载
+##\*局部加载
 $(function($){
 $(".xxx").on('click', function(){
-        $('xxx').load(url + '#main>_') //xxx 中加载 url 页面里的#main 里的部分
+        $('xxx').load(url + '#main>\_') //xxx 中加载 url 页面里的#main 里的部分
 })
 })
 
-#\*添加 loading 动画
+##\*添加 loading 动画
 $(document).ajaxStart(function(){
     //只要有ajax请求发生 就会执行
 })
