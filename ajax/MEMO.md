@@ -1,7 +1,7 @@
 # 最原始方法
 
-var xhr = new XMLHttpRequest();
-xhr.open('接口名称');
+var xhr = new XMLHttpRequest();  
+xhr.open('接口名称');  
 xhr.send();
 xhr.onreadystateChange = function(){
 if(readyState!=4) return;
