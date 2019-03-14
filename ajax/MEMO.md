@@ -53,6 +53,6 @@ $(document).ajaxStart(function(){
 &emsp;&emsp;$(加载动画).fadeIn()  
 })  
 $(document).ajaxStop(function(){  
-// 只要有 ajax 请求结束就会执行 
+// 只要有 ajax 请求结束就会执行  
 &emsp;&emsp;$(加载动画).fadeOut()  
 })
