@@ -11,8 +11,8 @@ xhr.onreadystateChange = function(){
 # jquery
 
 $.ajax({  
-    url:'接口名称',  
-    type:'post'（或'get'）  
+&emsp;&emsp;url:'接口名称',  
+&emsp;&emsp;type:'post'（或'get'）  
     data:{id:'11',name:'hhh'},  
     dataType:'json',  
     beforeSend:function(xhr){  //请求前发送  
