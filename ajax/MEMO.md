@@ -48,9 +48,11 @@ $(".xxx").on('click', function(){
 
 ## \*添加 loading 动画
 
-$(document).ajaxStart(function(){
-    //只要有ajax请求发生 就会执行
-})
-$(document).ajaxStop(function(){
-// 只要有 ajax 请求结束就会执行
+$(document).ajaxStart(function(){  
+    //只要有ajax请求发生 就会执行  
+&emsp;&emsp;$(加载动画).fadeIn()  
+})  
+$(document).ajaxStop(function(){  
+// 只要有 ajax 请求结束就会执行 
+&emsp;&emsp;$(加载动画).fadeOut()  
 })
