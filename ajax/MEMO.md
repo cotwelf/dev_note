@@ -2,31 +2,31 @@
 
 var xhr = new XMLHttpRequest();  
 xhr.open('接口名称');  
-xhr.send();
-xhr.onreadystateChange = function(){
-if(readyState!=4) return;
-xxxxx;
+xhr.send();  
+xhr.onreadystateChange = function(){  
+ if(readyState!=4) return;  
+ xxxxx;  
 }
 
 # jquery
 
-$.ajax({
-    url:'接口名称',
-    type:'post'（或'get'）
-    data:{id:'11',name:'hhh'},
-    dataType:'json',
-    beforeSend:function(xhr){  //请求前发送
-        console.log(xhr)
-    },
-    success:function(res){      //请求成功后执行
-        console.log(res)
-    },
-    fail: function() {
-        $(".msgWrapper").html('Error:' + error);
-},
-complete:function(xhr){
-console.log('请求结束（不论成功与否）')
-}
+$.ajax({  
+    url:'接口名称',  
+    type:'post'（或'get'）  
+    data:{id:'11',name:'hhh'},  
+    dataType:'json',  
+    beforeSend:function(xhr){  //请求前发送  
+        console.log(xhr)  
+    },  
+    success:function(res){      //请求成功后执行  
+        console.log(res)  
+    },  
+    fail: function() {  
+        $(".msgWrapper").html('Error:' + error);  
+ },  
+ complete:function(xhr){  
+ console.log('请求结束（不论成功与否）')  
+ }  
 })
 
 ## 等同于
