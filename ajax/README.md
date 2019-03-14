@@ -1,4 +1,4 @@
-#最原始方法
+# origin
 
 var xhr = new XMLHttpRequest();
 xhr.open('接口名称');
@@ -8,7 +8,7 @@ if(readyState!=4) return;
 xxxxx;
 }
 
-#jquery
+# jquery
 
 $.ajax({
     url:'接口名称',
@@ -29,7 +29,8 @@ console.log('请求结束（不论成功与否）')
 }
 })
 
-##等同于：
+## 等同于：
+
 $.getJSON('接口名称' , {id: 1} ,function(res){
     console.log(res)
 })
