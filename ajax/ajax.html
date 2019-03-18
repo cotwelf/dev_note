@@ -55,7 +55,7 @@
             console.log(res)
         })
 
-        // * 局部加载
+        // * 局部加载：不重新加载整个网页的情况下，对网页的某部分进行更新。
         $(function ($) {
             $(".xxx").on('click', function () {
                 $('xxx').load(url + '#main>\_') //xxx 中加载 url 页面里的#main 里的部分
@@ -80,7 +80,6 @@
         // var link = document.createElement('link')
         // link.href = 'xxxxx'
         // link.rel = 'stylesheet'
-
     </script>
 </body>
 
