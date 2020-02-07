@@ -1,0 +1,131 @@
+<script>
+
+// setTimeout(function() {
+//     console.log(1);
+// }, 100);
+// setTimeout(function () {
+//     console.log(2);
+// }, 0)
+// Promise.resolve(console.log(3)).then(() => { console.log(4) })
+// async function async1(){
+//     console.log(5)
+//     await async2()
+//     console.log(6)
+// }
+// async function async2(){
+//     console.log(7)
+// }
+// async1()
+// console.log(8)
+
+
+// new Promise((resolve) => {
+//   setTimeout(() => {
+//     resolve()
+//   }, 1000)
+// }).then(() => console.log('aaaa'))
+
+
+
+// setTimeout(() => {
+//   console.log('a')
+//   setTimeout(() => {
+//     console.log('a')
+//     setTimeout(() => {
+//       console.log('a')
+//       setTimeout(() => {
+//         console.log('a')
+//         setTimeout(() => {
+//           console.log('a')
+//           setTimeout(() => {
+//             console.log('a')
+//           }, 1000)
+//         }, 1000)
+//       }, 1000)
+//     }, 1000)
+//   }, 1000)
+// }, 1000)
+
+
+// function sleepOneSecond() {
+//   return new Promise((resolve) => setTimeout(resolve, 1000))
+// }
+
+// sleepOneSecond()
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+
+new Promise((resolve) => {
+    console.log('23333')
+    resolve()
+}).then(() => console.log('我被调用了'))
+
+// setTimeout(function(){console.log('我被调用了')}, 1000)
+
+// new Promise(function (resolve) {
+//   setTimeout(function () {resolve()}, 1000)
+// }).then(function () {
+//   console.log('啊我被执行了')
+// })
+
+
+
+// const data = []
+// const request = function(name,arr){
+//     $.ajax({
+//         url: '/api/'+name,
+//         success(dataA) {
+//             arr.push(dataA)
+//         }
+//     })
+// }
+// new Promise((resolve) => {
+//     request('A',data)
+//     resolve()
+// })
+// .then((resolve)=>{
+//     request('B',data)
+//     resolve()
+// })
+// .then(()=>{
+//     request('B',data)
+//     console.log('这里是结果:', data[0],data[1],data[2])
+// })
+
+
+new Promise((resolve) => {
+    console.log('a')
+    resolve()
+})
+.then((resolve)=>{
+    console.log('b')
+})
+.then(()=>{
+    request('B',data)
+    console.log('这里是结果:', data[0],data[1],data[2])
+})
+
+// sleepOneSecond()
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+//   .then(() =>{
+//     console.log('a');
+//     return sleepOneSecond()
+//   })
+</script>
